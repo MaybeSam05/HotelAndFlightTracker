@@ -1,13 +1,14 @@
 from tabulate import tabulate
+from config import API_KEY
 import requests
 import dest
 
 def main():
     print("\n\nHello and Welcome to Travel Booker!\n\n")
-    print(tabulate(dest.dict, tablefmt="double_grid"), "\n")
+    print(tabulate(dest.airport_dict, tablefmt="double_grid"), "\n")
 
     choice = destination()
-    for item in dest.dict:
+    for item in dest.airport_dict:
         if item[0] == choice: location = (item[1])
     print(f"\nYou've selected **{location}**")
 
@@ -18,9 +19,9 @@ def main():
     depart, arrive = dates()
     a, c, i = person()
     interior = cabin()
-    key = dest.key
+    key = API_KEY
 
-    airport_info = next((item for item in dest.list if item[0] == choice), None)
+    airport_info = next((item for item in dest.airport_code_list if item[0] == choice), None)
     if airport_info: 
         away = airport_info[1]
     

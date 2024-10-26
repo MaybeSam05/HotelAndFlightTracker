@@ -1,6 +1,7 @@
 import airportsdata
 
-dict = [[1, "Paris, France"],
+
+airport_dict = [[1, "Paris, France"],
             [2, "Rome, Italy"],
             [3, "London, England"],
             [4, "Tokyo, Japan"],
@@ -16,7 +17,7 @@ dict = [[1, "Paris, France"],
             [14, "Bangkok, Thailand"],
             [15, "Los Angeles, California"]]
 
-list = [[1, "CDG"],
+airport_code_list = [[1, "CDG"],
             [2, "FCO", "IT"],
             [3, "LHR", "GB"],
             [4, "HND", "JP"],
@@ -36,5 +37,5 @@ airports = airportsdata.load('IATA')
 airports = {code: info for code, info in airports.items() if info['country'] == 'US'}
 allports = airportsdata.load('IATA')
 
-key = "30f656ce953ce88019e3d0df343d0f77edc7906afb821040d9dbb3d0152d7da3"
+
 
