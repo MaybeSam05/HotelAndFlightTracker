@@ -189,4 +189,5 @@ def hotels(data):
     else: return hotel3
 
 if __name__ == "__main__":
+    #call main to check the results
     main()
