@@ -51,6 +51,8 @@ API Integration:
 
 - The tool utilizes the SerpAPI to fetch live flight and hotel data, ensuring that users receive up-to-date travel options. API keys must be configured within the dest.py file.
 
+
+
 Customization:
 
 - The tool is designed to be easily extended with additional functionality, such as adding more travel destinations, enhancing flight or hotel search criteria, or improving user interactions through a GUI interface.
